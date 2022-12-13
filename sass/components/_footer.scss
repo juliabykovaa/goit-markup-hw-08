@@ -1,0 +1,22 @@
+.footer {
+    background-color: $dark-gray-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    .color-logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-nav {
+    display: inline-block;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+    max-width: 1200px;
+    width: 100%;
+}

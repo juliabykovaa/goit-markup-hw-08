@@ -1,0 +1,41 @@
+.activity {
+    align-items: center;
+    @extend %marginAuto;
+}
+
+.section.activity {
+    padding-top: 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    padding-top: 0;
+}
+
+.act {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.act__item {
+    margin-right: 30px;
+    position: relative;
+    &:last-child {
+    margin-right: 0;
+    }
+}
+
+.act__text {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $primary-white-color;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+}

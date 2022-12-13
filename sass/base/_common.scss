@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: $primary-text-color;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+svg {
+    transition: fill $main-transition;
+}
+
+.container {
+    @extend %marginAuto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.section {
+    @extend %section;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.image {
+    display: block;
+    width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.link {
+    font-display: none;
+    display: block;
+    text-decoration: none;
+    transition: color $main-transition;
+}
+    

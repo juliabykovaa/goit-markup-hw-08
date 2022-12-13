@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./base/common";
+@import "./base/reset";
+
+
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/activity";
+@import "./components/address";
+@import "./components/buttons";
+@import "./components/clients";
+@import "./components/features";
+@import "./components/footer";
+@import "./components/mail-sub";
+@import "./components/modal";
+@import "./components/portfolio";
+@import "./components/social-sub";
+@import "./components/team";

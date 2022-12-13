@@ -1,0 +1,32 @@
+.feature {
+    display: flex;
+}
+
+.feature__icon {
+    height: 120px;
+    @include centeredFlex;
+    background-color: $light-gray-color;
+    margin-bottom: 30px;
+}
+
+.feature__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    &:last-child {
+    margin-right: 0px;
+    }
+}
+
+.feature__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.feature__descript {
+    color: $secondary-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+}

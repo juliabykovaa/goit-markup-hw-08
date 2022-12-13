@@ -1,0 +1,29 @@
+.address-nav {
+    margin-right: 70px;
+    width: 231px;
+}
+
+.address__link {
+    font-style: normal;
+    text-decoration: none;
+    display: inline-block;
+    color: $white-color-60transp;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color $main-transition;
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.maps {
+    color: $primary-white-color;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
