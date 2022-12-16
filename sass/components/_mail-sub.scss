@@ -1,20 +1,35 @@
 .mail-field {
     display: flex;
     display: inline-block;
-    margin-left: auto;
-    align-items: end;
+    
+    @media screen and (min-width: 480px) {
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        align-items: end;
+    }
 }
 
 .mail-sub {
-    @include centeredFlex;
-    margin-left: auto;
-    gap: 12px;
-
+    @media screen and (min-width: 1200px) { 
+        @include centeredFlex;
+        margin-left: auto;
+        gap: 12px;
+    }
 }
+
 
 .mail-input {
     display: flex;
-    width: 358px;
+    
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -22,14 +37,36 @@
     background-color: transparent;
     padding-left: 16px;
     color: $white-color-60transp;
+    
     &:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
+    }
+    @media screen and (max-width: 480px) {
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+         } 
+    @media screen and (min-width: 480px) {
+        align-items: center;
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        padding-left: 16px;
+        margin-bottom: 0;
     }
 }
 
 .mail-sub__link {
     @include centeredFlex;
+   
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -46,6 +83,21 @@
     &:hover,
     &:focus {
         background-color: $accent-color-active;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        max-width: 1199x;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

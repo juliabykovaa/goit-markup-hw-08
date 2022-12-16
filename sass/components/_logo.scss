@@ -5,9 +5,13 @@
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
-    line-height: 1.1;
+    line-height: 1.16;
     text-decoration: none;
     letter-spacing: 0.03em;
+
+    @include desktop {
+        line-height: 1.19;
+    }
 
 }
 

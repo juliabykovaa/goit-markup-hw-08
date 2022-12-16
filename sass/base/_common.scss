@@ -13,20 +13,34 @@ svg {
 
 .container {
     @extend %marginAuto;
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 100%;
 }
+    
 
 .section {
-    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (min-width: 1200px) {
+        .section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+    }
+
 }
 
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1666;
+    line-height: 1.18;
     text-align: center;
     margin-bottom: 50px;
+    @include desktop{
+        line-height: 1.1666;
+    }
+    
 }
 .image {
     display: block;
@@ -47,9 +61,14 @@ svg {
 }
 
 .link {
-    font-display: none;
     display: block;
     text-decoration: none;
     transition: color $main-transition;
 }
     
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+

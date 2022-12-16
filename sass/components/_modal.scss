@@ -10,22 +10,33 @@
         visibility $main-transition;
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+.input-wrapper {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
 }
+.modal-form .comment {
+        margin-bottom: 0px;
+    }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
     border-radius: 4px;
+    padding: 40px;
     background-color: $primary-white-color;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $main-transition;
-    padding: 40px;
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        }
+   
+    
+    
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0);
     }
@@ -70,11 +81,12 @@
     transition: fill $main-transition;
 }
     
-
 .input-wrapper {
-    position: relative;
-    display: flex;
-    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        display: flex;
+        margin-bottom: 10px;
+    } 
 }
 
 
@@ -124,14 +136,24 @@ textarea {
     display: inline-block;
     cursor: pointer;
     margin-bottom: 30px;
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 1.71;
     color: $secondary-text-color;
     transition: box-shadow $main-transition;
     &:focus {
     outline: none;
     }
+    
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.66;
+    }
+    
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 1.71;
+}
 }
 
 .check-icon {
@@ -164,6 +186,9 @@ textarea {
     line-height: 1.166;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
+    @media screen and (max-width: 768px) {
+        line-height: 1.5;
+    }
 }
 
 .form-field {

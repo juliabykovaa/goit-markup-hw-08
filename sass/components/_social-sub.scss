@@ -7,8 +7,19 @@
     display: flex;
     margin-bottom: 20px;
     align-items: center;
-    justify-content: start;
     color: $primary-white-color;
+    @media screen and (max-width: 480px) {
+        justify-content: center;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
 }
 
 .social-sub__link {
@@ -34,3 +45,19 @@
     fill: $primary-white-color;
 }
 
+.desk-flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        padding-left: 76px;
+        padding-right: 89px;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        
+    }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+
+        }
+}

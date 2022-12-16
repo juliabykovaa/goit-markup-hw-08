@@ -1,7 +1,16 @@
 .address-nav {
-    margin-right: 70px;
-    width: 231px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            margin-right: 70px;
+            width: 231px;
+            text-align: left;
+        }
 }
+
 
 .address__link {
     font-style: normal;
@@ -25,5 +34,14 @@
 }
 
 .address-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 8px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+            margin-bottom: 9px;
+        }
+    
 }
