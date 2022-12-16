@@ -1,6 +1,8 @@
 .client {
     display: flex;
-    @media screen and (min-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (max-width: 480px) {
             max-width: 480px;
             flex-wrap: wrap;
         }
@@ -11,7 +13,7 @@
         }
     
         @media screen and (max-width: 1199px) {
-            max-width: 768px;
+            max-width: 1199px;
             flex-wrap: wrap;
             gap: 30px;
             
@@ -28,7 +30,7 @@
 .client__item {
     height: 92px;
     background-color: $primary-white-color;
-    @media screen and (max-width: 480px) { 
+    @media screen and (max-width: 767px) { 
             width: calc((100% - 2 * 15px) / 2);
         
         }
@@ -45,17 +47,9 @@
 }
 
 .client__item:not(:first-child) {
-    @media screen and (min-width: 480px) {
-        }
-    
-        @media screen and (min-width: 768px) {
-            max-width: 768px;
-        }
-    
-        @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
             margin-left: 30px;
-        }
-    
+        } 
 }
 
  .client__item:nth-child(2n + 1) {

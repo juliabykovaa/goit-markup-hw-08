@@ -66,6 +66,8 @@
 
 .mail-sub__link {
     @include centeredFlex;
+    margin-left: auto;
+    margin-right: auto;
    
     width: 200px;
     height: 50px;
@@ -83,21 +85,6 @@
     &:hover,
     &:focus {
         background-color: $accent-color-active;
-    }
-    @media screen and (max-width: 480px) {
-        margin-left: auto;
-        margin-right: auto;;
-    }
-    
-    @media screen and (max-width: 1199px) {
-        max-width: 1199x;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

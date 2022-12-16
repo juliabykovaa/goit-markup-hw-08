@@ -8,14 +8,7 @@
     margin-bottom: 20px;
     align-items: center;
     color: $primary-white-color;
-    @media screen and (max-width: 480px) {
-        justify-content: center;
-    }
-    
-    @media screen and (max-width: 1199px) {
-        justify-content: center;
-        
-    }
+    justify-content: center;
     
     @media screen and (min-width: 1200px) {
         justify-content: start;
@@ -54,10 +47,8 @@
         padding-right: 89px;
         justify-content: space-between;
         margin-bottom: 60px;
-        
     }
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-
-        }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }

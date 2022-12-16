@@ -134,6 +134,8 @@ textarea {
 
 .check-wrapper {
     display: inline-block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     margin-bottom: 30px;
     color: $secondary-text-color;
@@ -146,9 +148,7 @@ textarea {
         font-size: 12px;
         line-height: 1.66;
     }
-    
-    @media screen and (min-width: 768px) {}
-    
+ 
     @media screen and (min-width: 1200px) {
         padding-left: 15px;
         font-size: 14px;
