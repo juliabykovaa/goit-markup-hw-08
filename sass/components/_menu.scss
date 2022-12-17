@@ -30,6 +30,7 @@
     margin-top: 10px;
     cursor: pointer;
     margin-right: 15px;
+    transition: color $main-transition;
 
     &:hover,
     &:focus {
@@ -69,6 +70,7 @@
     letter-spacing: 0.02em;
     gap: 10px;
     transition: color $main-transition;
+    transition: fill $main-transition;
 
     &:hover,
     &:focus {
@@ -97,6 +99,7 @@
         font-size: 18px;
         line-height: 1.22;
         letter-spacing: 0.02em;
+        transition: color $main-transition;
     }
     &:hover,
     &:focus {

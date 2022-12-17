@@ -3,30 +3,18 @@
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
-    @media screen and (max-width: 480px) {
-            max-width: 480px;
-            
-        }
+    gap: 30px;
     
-    @media screen and (max-width: 767px) {
-            max-width: 767px;
-    
-        @media screen and (max-width: 1199px) {
-            max-width: 1199px;
-            gap: 30px;
-            
-        }
     
         @media screen and (min-width: 1200px) {
             max-width: 1200px;
             flex-wrap: nowrap;
             }
-        }
-    }
+}
+
     
 .client__item {
     height: 92px;
-    gap: 30px;
     background-color: $primary-white-color;
     @media screen and (max-width: 767px) { 
             width: calc((100% - 2 * 15px) / 2);

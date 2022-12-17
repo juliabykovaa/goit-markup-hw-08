@@ -20,16 +20,18 @@ svg {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -40,8 +42,6 @@ svg {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 @media screen and (min-width: 1200px) {
   .section .section {
@@ -308,6 +308,7 @@ button {
   margin-top: 10px;
   cursor: pointer;
   margin-right: 15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close__icon:hover, .close__icon:focus {
   color: #2196F3;
@@ -338,6 +339,7 @@ button {
   letter-spacing: 0.02em;
   gap: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mob-menu__link:hover, .contact-mob-menu__link:focus {
   color: #2196F3;
@@ -362,6 +364,7 @@ button {
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .social-menu__link:hover, .social-menu__link:focus {
@@ -437,6 +440,8 @@ button {
   background-size: cover;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 118px;
+  padding-top: 118px;
   flex-grow: 1;
 }
 
@@ -474,20 +479,10 @@ button {
 .hero__title {
   color: #FFFFFF;
   font-weight: 900;
+  font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .hero__title {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-size: 26px;
-    line-height: 1.62;
-  }
 }
 @media screen and (min-width: 1600px) {
   .hero__title {
@@ -700,24 +695,9 @@ button {
   margin-right: auto;
   margin-left: auto;
   flex-wrap: wrap;
+  gap: 30px;
 }
-@media screen and (max-width: 480px) {
-  .client {
-    max-width: 480px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .client {
-    max-width: 767px;
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 1199px) {
-  .client {
-    max-width: 1199px;
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .client {
     max-width: 1200px;
     flex-wrap: nowrap;
@@ -726,7 +706,6 @@ button {
 
 .client__item {
   height: 92px;
-  gap: 30px;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
@@ -911,24 +890,18 @@ button {
 }
 
 .mail-field {
+  align-items: center;
   display: flex;
   display: inline-block;
-}
-@media screen and (min-width: 480px) {
-  .mail-field {
-    align-items: center;
-  }
+  margin-left: auto;
 }
 @media screen and (max-width: 1199px) {
   .mail-field {
-    align-items: center;
-    margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .mail-field {
-    margin-left: auto;
     align-items: end;
   }
 }
@@ -938,13 +911,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     gap: 12px;
   }
 }
 
 .mail-input {
   display: flex;
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -961,19 +934,12 @@ button {
   .mail-input {
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 480px) {
   .mail-input {
     align-items: center;
     width: 450px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .mail-input {
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1295,10 +1261,8 @@ textarea {
   border-top: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .project__item {
-    width: 100%;
-  }
+.project__item {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .project__item {
