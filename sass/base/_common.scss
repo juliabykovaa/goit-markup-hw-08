@@ -11,10 +11,30 @@ svg {
     transition: fill $main-transition;
 }
 
+
 .container {
-    @extend %marginAuto;
-    max-width: 100%;
-}
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            .container {
+                max-width: 448px;
+            }
+        }
+    
+        @media screen and (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+    
+        @media screen and (min-width: 1200px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
     
 
 .section {
@@ -42,8 +62,10 @@ svg {
     }
     
 }
-.image {
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
     width: 100%;
 }
 

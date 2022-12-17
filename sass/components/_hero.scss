@@ -9,8 +9,8 @@
     background-size: cover;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 118px;
-    padding-top: 118px;
+    // padding-bottom: 118px;
+    // padding-top: 118px;
     flex-grow: 1;
 }
     @media (min-device-pixel-ratio: 2),
@@ -39,8 +39,7 @@
         
     @media screen and (min-width: 768px) {
         .hero {
-            padding: 272px 98px 237px;
-            background-image: $gra, url(../images/background.jpg);
+            background-image: $gra, url(../../images/background.jpg);
             }
     }
         
@@ -58,7 +57,7 @@
                 padding-bottom: 200px;
                 padding-top: 200px;
             }
-        }
+            }
 
 .hero__title {
     color: $primary-white-color;

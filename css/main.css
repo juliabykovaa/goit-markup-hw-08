@@ -1,4 +1,4 @@
-.send-button, .container {
+.send-button {
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,9 +17,26 @@ svg {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -46,8 +63,10 @@ svg {
   }
 }
 
-.image {
+img {
   display: block;
+  max-width: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -123,8 +142,6 @@ button {
 @media screen and (min-width: 768px) {
   .nav {
     padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     justify-content: center;
     margin-right: 0;
@@ -146,15 +163,15 @@ button {
 @media screen and (min-width: 768px) {
   .nav-menu {
     display: flex;
-    margin-left: 93px;
+    margin-left: 87px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-menu {
+    margin-left: 92px;
     display: flex;
-    margin-left: 93px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -420,8 +437,6 @@ button {
   background-size: cover;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 118px;
-  padding-top: 118px;
   flex-grow: 1;
 }
 
@@ -442,8 +457,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 272px 98px 237px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -486,6 +500,7 @@ button {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  gap: 30px;
 }
 @media screen and (max-width: 1199px) {
   .activity {
@@ -496,6 +511,7 @@ button {
   .activity {
     max-width: 1200px;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -510,7 +526,6 @@ button {
 
 .act {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .act__item {
@@ -569,10 +584,8 @@ button {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1199px) {
-  .address-list__item:not(:last-child) {
-    margin-bottom: 8px;
-  }
+.address-list__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
   .address-list__item:not(:last-child) {
@@ -686,37 +699,34 @@ button {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
   .client {
     max-width: 480px;
-    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 767px) {
   .client {
     max-width: 767px;
-    flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) and (max-width: 1199px) {
   .client {
     max-width: 1199px;
-    flex-wrap: wrap;
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) and (min-width: 1200px) {
   .client {
     max-width: 1200px;
     flex-wrap: nowrap;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .client__item {
   height: 92px;
+  gap: 30px;
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
@@ -786,19 +796,18 @@ button {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .feature {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feature {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 
@@ -823,7 +832,6 @@ button {
 
 .feature__item {
   width: 100%;
-  margin-bottom: 30px;
 }
 .feature__item:last-child {
   margin-right: 0px;
@@ -1252,20 +1260,10 @@ textarea {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (max-width: 768px) {
-  .projects-list {
-    gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projects-list {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  gap: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project__description {
@@ -1293,8 +1291,6 @@ textarea {
 .project__name {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   border: 1px solid rgb(238, 238, 238);
   border-top: 0;
 }
@@ -1302,10 +1298,6 @@ textarea {
 @media screen and (min-width: 480px) {
   .project__item {
     width: 100%;
-    justify-content: center;
-  }
-  .project__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1316,13 +1308,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .project__item {
     width: calc((100% - 60px) / 3);
-    margin-bottom: 30px;
-  }
-  .project__item:nth-child(3n) {
-    margin-right: 0;
-  }
-  .project__item:nth-last-child(-n+3) {
-    margin-bottom: 0;
   }
 }
 
@@ -1429,14 +1414,12 @@ textarea {
   background-color: #F5F4FA;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-@media screen and (min-width: 480px) {
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-}
+
 .team-member__position {
   color: #757575;
   font-size: 16px;

@@ -15,8 +15,6 @@
     justify-content: space-between;
     @include tablet {
         padding-top: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
         display: flex;
         justify-content: center;
         margin-right: 0;
@@ -36,13 +34,13 @@
    
     @media screen and (min-width: 768px)  {
     display: flex;
-    margin-left: 93px;
+    margin-left: 87px;
     padding-top: 32px;
     padding-bottom: 32px;
    } 
    @include desktop {
+    margin-left: 92px;
         display: flex;
-        margin-left: 93px;
         padding-top: 32px;
         padding-bottom: 32px;
     }

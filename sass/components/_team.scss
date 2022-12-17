@@ -9,15 +9,13 @@
     background-color: $light-gray-color;
     margin-right: auto;
     margin-left: auto;
-   
-    @media screen and (min-width: 480px) { 
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {}
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
+    
 
 .team-member__position {
     color: $secondary-text-color;
