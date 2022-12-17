@@ -1251,6 +1251,9 @@ textarea {
 }
 
 .project__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project__link:hover, .project__link:focus {
@@ -1261,6 +1264,7 @@ textarea {
   padding: 20px 24px;
   border: 1px solid rgb(238, 238, 238);
   border-top: 0;
+  flex-grow: 1;
 }
 
 .project__item {

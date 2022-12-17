@@ -48,6 +48,9 @@
 }
 
 .project__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow $main-transition;
     &:hover,
     &:focus {
@@ -61,6 +64,7 @@
     padding: 20px 24px;
     border: 1px solid rgba(238, 238, 238, 1);
     border-top: 0;
+    flex-grow: 1;
 }
 
 
