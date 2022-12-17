@@ -1227,7 +1227,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .portfolio-nav {
-    max-width: 768px;
+    max-width: 400px;
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
@@ -1253,14 +1253,11 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .projects-list {
     gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projects-list {
-    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1304,6 +1301,7 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .project__item {
+    width: 100%;
     justify-content: center;
   }
   .project__item:not(:last-child) {
