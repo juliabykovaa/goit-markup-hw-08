@@ -20,6 +20,7 @@
     }
 
 .modal {
+    width: calc(100% - 30px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,6 +29,7 @@
     background-color: $primary-white-color;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $main-transition;
+    
     @media screen and (min-width: 480px) {
             width: 450px;
         }
@@ -164,6 +166,7 @@ textarea {
     fill: $primary-white-color;
     border: 2px solid $primary-text-color;
     border-radius: 2px;
+    flex-shrink: 0;
     transition: background-color $main-transition,
         fill $main-transition,
         border-color $main-transition;

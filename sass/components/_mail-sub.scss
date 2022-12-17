@@ -1,4 +1,5 @@
 .mail-field {
+    width: 100%;
     align-items: center;
     display: flex;
     display: inline-block;
@@ -14,9 +15,9 @@
 }
 
 .mail-sub {
+    width: 100%;
     @media screen and (min-width: 1200px) { 
         @include centeredFlex;
-        
         gap: 12px;
     }
 }

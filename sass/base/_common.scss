@@ -53,12 +53,14 @@ svg {
 
 .section-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.18;
     text-align: center;
-    margin-bottom: 50px;
-    @include desktop{
+    margin-bottom: 30px;
+    @include desktop {
+        font-size: 36px;
         line-height: 1.1666;
+        margin-bottom: 50px;
     }
     
 }

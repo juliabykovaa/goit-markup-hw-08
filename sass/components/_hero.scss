@@ -39,7 +39,7 @@
         
     @media screen and (min-width: 768px) {
         .hero {
-            background-image: $gra, url(../../images/background.jpg);
+            background-image: $gra, url(../images/background.jpg);
             }
     }
         
@@ -67,7 +67,7 @@
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.3;
     }
