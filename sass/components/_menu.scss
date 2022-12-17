@@ -6,7 +6,8 @@
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    padding-left: 25px;
+
+    padding: 48px 40px;
 }
 
 .mob-menu>.container {
@@ -60,11 +61,6 @@
 }
 
 
-.mob-menu:last-child {
-    padding: 48px 40px;
-}
-
-
 
 
 
@@ -87,6 +83,7 @@
 
 .social-menu {
     display: flex;
+    gap: 20px;
 }
 
 .social-menu__link {
@@ -106,8 +103,6 @@
 }
 
 .social-menu__item:not(:last-child) {
-    margin-right: 20px;
-    margin-bottom: 32px;
     position: relative;
 }
 

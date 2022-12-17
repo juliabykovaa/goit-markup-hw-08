@@ -57,7 +57,7 @@ svg {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
     line-height: 1.1666;
@@ -289,7 +289,7 @@ button {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  padding-left: 25px;
+  padding: 48px 40px;
 }
 
 .mob-menu > .container {
@@ -335,10 +335,6 @@ button {
   font-size: 24px;
 }
 
-.mob-menu:last-child {
-  padding: 48px 40px;
-}
-
 .contact-mob-menu__link {
   color: #757575;
   font-weight: 500;
@@ -355,6 +351,7 @@ button {
 
 .social-menu {
   display: flex;
+  gap: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -373,8 +370,6 @@ button {
 }
 
 .social-menu__item:not(:last-child) {
-  margin-right: 20px;
-  margin-bottom: 32px;
   position: relative;
 }
 
